@@ -204,7 +204,7 @@ module.exports =[
     "final_occurences_number": 169,
     "family_points": 10,
     "health_points": 10,
-    "money_points": -30,
+    "money_points": -20,
     "work_points": 0,
     "points_type": "H"
   },
@@ -215,7 +215,7 @@ module.exports =[
     "final_occurences_number": 169,
     "family_points": 5,
     "health_points": 5,
-    "money_points": -20,
+    "money_points": -10,
     "work_points": 0,
     "points_type": "H"
   },
@@ -226,7 +226,7 @@ module.exports =[
     "final_occurences_number": 169,
     "family_points": 15,
     "health_points": 15,
-    "money_points": -30,
+    "money_points": -15,
     "work_points": 0,
     "points_type": "H"
   },

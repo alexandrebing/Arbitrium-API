@@ -421,7 +421,7 @@ module.exports =[
   },
   {
     "id": 43,
-    "description": "Você está assistindo televisão com sua família. Entretanto lembra que tem um relatório para fazer? Você interrompe este momento com a família?",
+    "description": "Você está assistindo televisão com sua família. Entretanto lembra que tem um relatório para fazer. Você interrompe este momento com a família?",
     "family_points": 5,
     "work_points": 10,
     "op_work": "Sim",
