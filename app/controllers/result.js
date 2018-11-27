@@ -7,6 +7,7 @@ const DayModel = require('../models/day.js')(db.sequelize, db.Sequelize);
 const HourModel = require('../models/hour.js')(db.sequelize, db.Sequelize);
 const ActivityPunctuationModel = require('../models/activity_punctuation.js')(db.sequelize, db.Sequelize);
 let activitiesList = []
+let checkList = []
 exports.create = function(req, res) {
     //Do nothing;
 };
@@ -28,6 +29,12 @@ exports.findOne = function(req, res) {
             });
         });
 };
+
+//Send result calculation for checking
+
+exports.getCalc = async function(req,res){
+    res.send(activitiesList)
+}
 
 exports.calcResults = async function(req, res) {
     activitiesList = []
@@ -179,7 +186,7 @@ async function evaluateHour(resultPoints, activities) {
             resultPoints.moneyAcitivity += activityPoints.money_points * numberOfOccurrences;
             
             dataOfActivity = {
-                activityId: activities.hourActivities[k].id,
+                activityId: await getActivityDescription(activities.hourActivities[k].id),
                 activityTipe: "H",
                 occurrences: activities.hourActivities[k].numberOfOccurrences,
                 familyPoints: activityPoints.family_points * numberOfOccurrences,
@@ -208,7 +215,7 @@ async function evaluateDay(resultPoints, activities) {
             resultPoints.moneyAcitivity += activityPoints.money_points;
 
             dataOfActivity = {
-                activityId: activities.dayActivities[k].id,
+                activityId: await getActivityDescription(activities.dayActivities[k].id),
                 activityTipe: "D",
                 occurrences: activities.dayActivities[k].numberOfOccurrences,
                 familyPoints: activityPoints.family_points,
@@ -238,7 +245,7 @@ async function evaluateWeek(resultPoints, activities) {
             resultPoints.moneyAcitivity += activityPoints.money_points;
 
             dataOfActivity = {
-                activityId: activities.weekActivities[k].id,
+                activityId: await getActivityDescription(activities.weekActivities[k].id),
                 activityTipe: "S",
                 occurrences: activities.weekActivities[k].numberOfOccurrences,
                 familyPoints: activityPoints.family_points,
@@ -376,6 +383,20 @@ function addOccuranceToActivity(activities, activityId) {
             activities.hourActivities[a].numberOfOccurrences++;
         }
     }
+}
+
+async function getActivityDescription(id){
+    const description = await db.sequelize.query(
+        'SELECT description FROM activities WHERE id = :id',
+        {
+            replacements: {
+                id: id
+            }
+            , type: db.sequelize.QueryTypes.SELECT
+            , raw: true
+        }
+    )
+    return description[0].description;
 }
 
 exports.update = function(req, res) {
