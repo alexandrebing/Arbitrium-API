@@ -14,10 +14,10 @@
         "dialect": "mysql"
     },
     "production": {
-        "username": "root",
-        "password": "arbitrium",
+        "username": "alexandrebing",
+        "password": "Arbitrium2k19",
         "database": "arbitrium",
-        "host": "database",
+        "host": "mysql.alexandrebing.com.br",
         "dialect": "mysql"
     }
 }
