@@ -10,7 +10,11 @@ module.exports = function(app) {
     // Retrive a single week with week id
     //app.get('/week/:weekId', weekController.findOne);
 
-    app.get('/week/last-week/:interviewId', weekController.findLastWeek);
+    // Retrieve last week with interview id
+    //app.get('/week/last-week/:interviewId', weekController.findLastWeek);
+
+    // Retrive a single week with week id and interview id
+    app.get('/week/:data', weekController.findOne);
 
     // Update an week with week id
     //app.put('/week/:weekId', weekController.update); //No need
