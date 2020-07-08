@@ -18,4 +18,8 @@ module.exports = function(app) {
 
     // Delete an result with result id
     //app.delete('/result/:resultId', resultController.delete); //No need
+
+    // Retrieve data about the results
+    app.get('/result/:interviewId', resultController.getCalc);
 }
+
