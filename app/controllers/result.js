@@ -53,11 +53,11 @@ exports.calcResults = async function(req, res) {
 
     // Creating object of results
     let resultPoints = {
-        familyAcitivity: 0,
+        familyAcitivity: 100,
         familyEvent: 0,
-        workAcitivity: 0,
+        workAcitivity: 100,
         workEvent: 0,
-        healthAcitivity: 150,
+        healthAcitivity: 100,
         moneyAcitivity: 150
     };
 
