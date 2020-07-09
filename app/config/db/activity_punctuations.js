@@ -38,7 +38,7 @@ module.exports =[
     "initial_occurences_number": 7,//3
     "final_occurences_number": 9,//25
     "family_points": 0,
-    "health_points": 10,//15
+    "health_points": 5,//15
     "money_points": 0,//-15
     "work_points": 0,
     "points_type": "D"
@@ -49,7 +49,7 @@ module.exports =[
     "initial_occurences_number": 10,//4
     "final_occurences_number": 25,//5
     "family_points": 0,
-    "health_points": 5,//5
+    "health_points": 0,//5
     "money_points": 0,//-20
     "work_points": 0,
     "points_type": "D"
@@ -83,7 +83,7 @@ module.exports =[
     "final_occurences_number": 4,
     "family_points": 0,
     "health_points": 0,
-    "money_points": 30,
+    "money_points": 40,
     "work_points": 5,
     "points_type": "D"
   },
@@ -94,7 +94,7 @@ module.exports =[
     "final_occurences_number": 6,
     "family_points": 0,
     "health_points": 0,
-    "money_points": 50,
+    "money_points": 60,
     "work_points": 10,
     "points_type": "D"
   },
@@ -105,7 +105,7 @@ module.exports =[
     "final_occurences_number": 9,
     "family_points": 0,
     "health_points": 0,
-    "money_points": 70,
+    "money_points": 80,
     "work_points": 15,
     "points_type": "D"
   },
@@ -116,8 +116,8 @@ module.exports =[
     "final_occurences_number": 13,
     "family_points": -15,
     "health_points": -30,
-    "money_points": 130,
-    "work_points": 30,
+    "money_points": 60,
+    "work_points": 15,
     "points_type": "D"
   },
   {
@@ -125,10 +125,10 @@ module.exports =[
     "activity_id": 2,//trabalho 14-15h (5 a 6 horas extras)
     "initial_occurences_number": 14,
     "final_occurences_number": 15,
-    "family_points": -25,
-    "health_points": -50,
-    "money_points": 170,
-    "work_points": 40,
+    "family_points": -50,
+    "health_points": -25,
+    "money_points": 100,
+    "work_points": 25,
     "points_type": "D"
   },
   {
@@ -137,9 +137,9 @@ module.exports =[
     "initial_occurences_number": 16,
     "final_occurences_number": 25,
     "family_points": -50,
-    "health_points": -90,
-    "money_points": 210,
-    "work_points": 40,
+    "health_points": -100,
+    "money_points": 140,
+    "work_points": 25,
     "points_type": "D"
   },
   {
@@ -204,8 +204,8 @@ module.exports =[
     "final_occurences_number": 169,
     "family_points": 10,
     "health_points": 10,
-    "money_points": -30,
-    "work_points": 0,
+    "money_points": -15,
+    "work_points": -5,
     "points_type": "H"
   },
   {
@@ -215,8 +215,8 @@ module.exports =[
     "final_occurences_number": 169,
     "family_points": 5,
     "health_points": 5,
-    "money_points": -20,
-    "work_points": 0,
+    "money_points": -5,
+    "work_points": -5,
     "points_type": "H"
   },
   {
@@ -226,8 +226,8 @@ module.exports =[
     "final_occurences_number": 169,
     "family_points": 15,
     "health_points": 15,
-    "money_points": -30,
-    "work_points": 0,
+    "money_points": -10,
+    "work_points": -5,
     "points_type": "H"
   },
   {
@@ -235,10 +235,10 @@ module.exports =[
     "activity_id": 7,//lazer sozinho
     "initial_occurences_number": 1,
     "final_occurences_number": 25,
-    "family_points": 0,
+    "family_points": -15,
     "health_points": 15,
     "money_points": -10,
-    "work_points": 0,
+    "work_points": -5,
     "points_type": "H"
   },
   {
@@ -291,9 +291,9 @@ module.exports =[
     "initial_occurences_number": 1,
     "final_occurences_number": 169,
     "family_points": 5,
-    "health_points": 0,
+    "health_points": -5,
     "money_points": -5,
-    "work_points": 0,
+    "work_points": -5,
     "points_type": "H"
   },
   {
@@ -335,8 +335,8 @@ module.exports =[
     "initial_occurences_number": 1,
     "final_occurences_number": 25,
     "family_points": -20,
-    "health_points": 0,
-    "money_points": 40,
+    "health_points": -10,
+    "money_points": 80,
     "work_points": 20,
     "points_type": "D"
   }
