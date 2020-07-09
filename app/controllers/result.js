@@ -58,7 +58,7 @@ exports.calcResults = async function(req, res) {
         workAcitivity: 0,
         workEvent: 0,
         healthAcitivity: 150,
-        moneyAcitivity: 150
+        moneyAcitivity: 400
     };
 
     // This variable will hold the id of the last id, that will be necessary when getting the last result
