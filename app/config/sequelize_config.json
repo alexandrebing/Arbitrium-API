@@ -1,9 +1,9 @@
 {
     "development": {
-        "username": "alexandrebing01",
-        "password": "Admin2019",
-        "database": "alexandrebing01",
-        "host": "mysql.alexandrebing.com.br",
+        "username": "root",
+        "password": "admin",
+        "database": "arbitrium",
+        "host": "127.0.0.1",
         "dialect": "mysql"
     },
     "test": {
